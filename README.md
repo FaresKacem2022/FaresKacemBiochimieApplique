@@ -11,4 +11,10 @@ import pandas as pd
      "Longueur":[12, 12, 12, 10, 11, 10, 10],
      "pourcentage GC":[50, 66.67, 58.33, 40, 45.45, 60, 50]
 }
+# Création d'un Dataframe ( tableau Pandas)
+df = pd.DataFrame(data)
+print("*********** création et affichage*********)
 
+# Affichage du tableau 
+print("Tableau des séquences ADN :")
+print(df)
