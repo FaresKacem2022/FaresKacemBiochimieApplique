@@ -3,9 +3,8 @@
 # Kies Abir
 # Khaouani Norhene
 # Touileb Aya fatima Zahra 
--------------------------------------------------------------
+
 import pandas as pd
--------------------------------------------------------------
 # Données : séquences ADN,
  Longueur, pourcentage de Gc
  data= {
