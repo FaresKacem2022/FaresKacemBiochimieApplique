@@ -6,7 +6,7 @@
 
 import pandas as pd
 # Données : séquences ADN,
- Longueur, pourcentage de Gc
+ Longueur, pourcentage de GC
  data= {
     "séquence":["ATGCGTACGTA", "GCTAGCTAGGCC", "ATGCGCGTAAGT", "TACGATCGTA", "ATGAAAGGCTT", "CGTACGTAGC", "TTAACCGGAT"],
      "Longueur":[11, 12, 12, 10, 11, 10, 10],
