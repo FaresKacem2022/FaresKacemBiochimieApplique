@@ -13,7 +13,7 @@ import pandas as pd
 }
 # Création d'un Dataframe ( tableau Pandas)
 df = pd.DataFrame(data)
-print("*********** création et affichage*********)
+print("*********** creation et affichage*********")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :")
