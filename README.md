@@ -21,7 +21,7 @@ print(df, "\n\n\n")
 # Opération sur les tableaux:
 print("********* Opérations *******")
 #1) Sélectionner uniquement la colonne "longueur"
-longueur = df["longueur"]
+longueur = df["Longueur"]
 print(longueur)
 
 #2) Affichage avec une blibliothèque de visualisation (matplotlib)
