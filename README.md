@@ -17,4 +17,27 @@ print("*********** création et affichage*********")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :")
-print(df)
+print(df, "\n\n\n")
+# Opération sur les tableaux:
+imprimer ("********* Opérations *******")
+#1) Sélectionnez uniquement la colonne "longueur"
+longueur = df [ "longueur" ]
+imprimer ( longueur )
+
+#2) Affichage avec une blibliothèque de visualisation (matplotlib)
+#import matplotlib.pyplot as plt
+#Données
+#séquences = ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"]
+#longueur =[11, 12, 12, 10, 11, 10, 10]
+#gc_content = [50, 66.67, 58.33, 40, 45.45, 60, 50]
+#Création d'un DataFrame
+#data = {"Séquence": séquences,"Longueur": Longueur, "Pourcentage GC": gc_content}
+#df = pd.DataFrame(données)
+
+# Affichage du tableau de données sous forme de graphique
+#plt.figure(figsize=10,6))
+#plt.bar(df["Séquence"], df["Pourcentage GC"], color='skyblue')
+#plt.xlabel("Séquences")
+#plt.ylabel("Pourcentage de GC")
+#plt.title("Pourcentage de GC par séquence")
+#plt.show() 
