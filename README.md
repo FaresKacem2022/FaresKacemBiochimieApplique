@@ -38,4 +38,10 @@ print(longueur)
 print("************* Filtrage avec longueur  *************")
 # Filtrer les séquences avec  longueur  supérieur à 10
 filtered_df = df[df["Longueur"] > 10] 
-print(filtered_df) 
+print(filtered_df, "\n\n\n") 
+#4)Calculer la moyenne du pourcentage de GC
+print("******** Calcul de la moyenne ********)
+# Calculer la moyenne du pourcentage de GC
+average_gc = df["Pourcentage GC"].mean()
+print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
+
