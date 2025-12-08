@@ -42,6 +42,6 @@ print(filtered_df, "\n\n\n")
 #4)Calculer le pourcentage moyen de GC
 print("******** Calcul de le pourcentage ********")
 # Calculer la moyenne du pourcentage de GC
-average_gc = df["Pourcentage GC"].mean()
+average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
 
