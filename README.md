@@ -37,5 +37,5 @@ print(longueur)
 #3)Filtrer les séquences avec un pourcentage de GC supérieur à 50%
 print("************* Filtrage avec pourcentage %  *************")
 # Filtrer les séquences avec un pourcentage de GC supérieur à 50
-filetred_df = df[df["Pourcentage GC"] > 50] 
+filtered_df = df[df["Pourcentage GC"] > 50] 
 print(filtered_df) 
