@@ -20,7 +20,7 @@ print("Tableau des séquences ADN :")
 print(df, "\n\n\n")
 # Opération sur les tableaux:
 imprimer ("********* Opérations *******")
-#1) Sélectionnez uniquement la colonne "longueur"
+#1) Sélectionner uniquement la colonne "longueur"
 longueur = df [ "longueur" ]
 imprimer ( longueur )
 
@@ -34,13 +34,6 @@ imprimer ( longueur )
 #data = {"Séquence": séquences,"Longueur": Longueur, "Pourcentage GC": gc_content}
 #df = pd.DataFrame(données)
 
-# Affichage du tableau de données sous forme de graphique
-#plt.figure(figsize=10,6))
-#plt.bar(df["Séquence"], df["Pourcentage GC"], color='skyblue')
-#plt.xlabel("Séquences")
-#plt.ylabel("Pourcentage de GC")
-#plt.title("Pourcentage de GC par séquence")
-#plt.show() 
 #3)Filtrer les séquences avec un pourcentage de GC supérieur à 50%
 print( "************* Filtrage avec pourcentage %  *************" )
 # Filtrer les séquences avec un pourcentage de GC supérieur à 50
