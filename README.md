@@ -41,3 +41,8 @@ imprimer ( longueur )
 #plt.ylabel("Pourcentage de GC")
 #plt.title("Pourcentage de GC par séquence")
 #plt.show() 
+#3)Filtrer les séquences avec un pourcentage de GC supérieur à 50%
+print( "************* Calcul de la moyenne *************" )
+# Filtrer les séquences avec un pourcentage de GC supérieur à 50
+filtred_df = df[df["Pourcntage GC"] > 50] 
+print(filtred_df) 
