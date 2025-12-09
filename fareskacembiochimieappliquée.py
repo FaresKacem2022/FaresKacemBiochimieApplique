@@ -2,7 +2,7 @@
 # Mohamed Sori Aissa 
 # Kies Abir
 # Khaouani Norhene
-# Touileb Aya Fatima Zahra 
+# Touileb Aya Fatima Zahra hu
 
 import pandas as pd
 # Données : séquences ADN,Longueur,pourcentage de GC
