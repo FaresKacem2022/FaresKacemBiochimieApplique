@@ -13,13 +13,13 @@ data = {
 }
 # Création d'un Dataframe (tableau pandas)
 df = pd.DataFrame(data)
-print("*********** Création et affichage*********")
+print("********** Création et affichage **********")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :")
 print(df, "\n\n\n")
 # Opération sur les tableaux:
-print("********* Opérations *******")
+print("********** Opérations **********")
 #1) Sélectionner uniquement la colonne "longueur"
 longueur = df["Longueur"]
 print(longueur)
@@ -35,13 +35,13 @@ print(longueur)
 #df = pd.DataFrame(données)
 
 #3)Filtrer les séquences avec  longueur  supérieur à 10
-print("************* Filtrage avec longueur  *************")
+print("********** Filtrage avec longueur  **********")
 # Filtrer les séquences avec  longueur  supérieur à 10
 filtered_df = df[df["Longueur"] > 10] 
 print(filtered_df, "\n\n\n") 
 
 #4)Calculer le pourcentage moyen de GC
-print("******** Calcul de le pourcentage ********")
+print("********** Calcul de le pourcentage **********")
 # Calculer la moyenne du pourcentage de GC
 average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
@@ -50,7 +50,7 @@ df["Catégorie GC"]= df["pourcentage GC"].apply(lambda x: "Riche" if x > 55 else
 print(df, "\n\n\n")
 
 #6)Ajouter une nouvelle colonne de nombre de G
-print("***** Ajoute une nouvelle colonne de nombre de G *****")
+print("********** Ajoute une nouvelle colonne de nombre de G **********")
 # Ajouter une nouvelle colonne "nombre de G"
 df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
