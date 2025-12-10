@@ -57,3 +57,4 @@ print(df, "\n\n\n")
 
 #7)Calculer l'écart-type de %GC et de la longueur des séquences
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
+print(df[["pourcentage GC","Longueur"]].std())
