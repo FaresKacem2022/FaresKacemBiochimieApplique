@@ -66,7 +66,7 @@ print(df, "\n\n\n")
 
 
 #7) Calculer l'écart-type de pourcentage GC et de la longueur des séquences
-print("********** Calcul de l'écart-type du pourcentage  GC et de la longueur des séquences **********")
+print("********** Calcule de l'écart-type du pourcentage  GC et de la longueur des séquences **********")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
 # Calculer l'écart-type de pourcentage GC et de la longueur des séquences  
 print(df[["pourcentage GC","Longueur"]].std())
@@ -76,7 +76,13 @@ print("********** Arrondir les valeurs de l'écart-type **********")
 # Arrondir les valeurs de l'écart-type 
 print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".format))
 
+#8) Calculer la Moyenne de pourcentage GC et de la longueur des séquences 
+print("********** Calcule de la Moyenne  du pourcentage  GC et de la longueur des séquences **********")
+# Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
+colonne_Cibles= ["pourcentage GC", "Longueur"]
+print(f"Moyenne des colonnes {colonne_Cibles} :")
+print(df[colonne_cibles].means())
 
-#8) Sauvegarde et chargement des données avec panda
+#9) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
 #df.to_csv("tableau_sequences.csv",index=False)
