@@ -51,7 +51,8 @@ average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
 
 
-#5)Ajouter d'une nouvelle colonne "catégorie GC"
+#5)Ajouter d'une nouvelle colonne "Catégorie GC"
+# Ajouter une nouvelle colonne "Catégorie GC"
 df["Catégorie GC"]= df["pourcentage GC"].apply(lambda x: "Riche" if x > 55 else "Moyenne" if 45 < x < 55 else "Faible")
 print(df, "\n\n\n")
 
@@ -63,9 +64,17 @@ df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
 
 
-#7)Calculer l'écart-type de %GC et de la longueur des séquences
+#7) Calculer l'écart-type de pourcentage GC et de la longueur des séquences
+print("********** Calcul de l'écart-type du pourcentage  GC et de la longueur des séquences **********")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
+# Calculer l'écart-type de pourcentage GC et de la longueur des séquences  
 print(df[["pourcentage GC","Longueur"]].std())
+
+#7.1)Arrondir les valeur de l'écart-type 
+print("********** Arrondir les valeurs de l'écart-type **********") 
+# Arrondir les valeurs de l'écart-type 
+print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".format))
+
 
 #8) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
