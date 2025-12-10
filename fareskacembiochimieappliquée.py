@@ -58,3 +58,6 @@ print(df, "\n\n\n")
 #7)Calculer l'écart-type de %GC et de la longueur des séquences
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
 print(df[["pourcentage GC","Longueur"]].std())
+#8) Sauvegarde et chargement des données avec panda
+# Sauvegarder le DataFrame dans un fichier CSV
+#df.to_csv("tableau_sequences.csv",index=False)
