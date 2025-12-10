@@ -54,3 +54,6 @@ print("***** Ajoute une nouvelle colonne de nombre de G *****")
 # Ajouter une nouvelle colonne "nombre de G"
 df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
+
+#7)Calculer l'écart-type de %GC et de la longueur des séquences
+print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
