@@ -79,9 +79,9 @@ print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".f
 #8) Calculer la Moyenne de pourcentage GC et de la longueur des séquences 
 print("********** Calcule de la Moyenne  du pourcentage  GC et de la longueur des séquences **********")
 # Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
-colonne_Cibles= ["pourcentage GC", "Longueur"]
-print(f"Moyenne des colonnes {colonne_Cibles} :")
-print(df[colonne_cibles].means())
+colonnes_cibles= ["pourcentage GC", "Longueur"]
+print(f"Moyenne des colonnes {colonnes_cibles} :")
+print(df[colonnes_cibles].mean())
 
 #9) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
