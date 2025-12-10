@@ -59,7 +59,6 @@ print(df, "\n\n\n")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
 print(df[["pourcentage GC","Longueur"]].std())
 
-Print(***********Sauvegarde et chargement des données********)
 #8) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
 #df.to_csv("tableau_sequences.csv",index=False)
