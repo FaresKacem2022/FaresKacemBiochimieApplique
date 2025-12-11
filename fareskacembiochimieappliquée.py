@@ -47,7 +47,7 @@ print(filtered_df, "\n\n\n")
 
 
 #4)Calculer le pourcentage moyen de GC
-print("************ Calcul de le pourcentage ************")
+print("************ Calcul de pourcentage moyen ************")
 # Calculer la moyenne du pourcentage de GC
 average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
@@ -60,10 +60,14 @@ print(df, "\n\n\n")
 
 
 #6)Ajouter une nouvelle colonne de nombre de G
-print("************ Ajoute une nouvelle colonne de nombre de G ************")
+print("************ Ajoute une nouvelle colonne ************")
 # Ajouter une nouvelle colonne "nombre de G"
 df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
+
+#Calculer le pourcentage moyen de G
+average_g = df["Longueur"].mean()
+print(f"pourcentage moyen de G : {average_g:.2f}%", "\n\n\n")
 
 
 #7) Calculer l'écart-type de pourcentage GC et de la longueur des séquences
