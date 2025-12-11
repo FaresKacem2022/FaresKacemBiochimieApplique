@@ -89,6 +89,16 @@ print(df, "\n\n\n")
 average_c = df["Longueur"].mean()
 print(f"pourcentage moyen de C : {average_c:.2f}%", "\n\n\n") 
 
+#Ajouter une nouvelle colonne nombre de A
+print("********** Ajoute une nouvelle colonne **********")
+#Ajouter une nouvelle colonne "nombre de A"
+df["nombre de A"] = df["séquence"].apply(lambda séq: séq.count("A"))
+print(df, "\n\n\n")
+
+#Calculer le pourcentage moyen de A
+average_A = df["Longueur"].mean()
+print(f"pourcentage moyen de A : {average_A:.2f}%", "\n\n\n")
+
 #7) Calculer l'écart-type de pourcentage GC et de la longueur des séquences
 print("*********** Calcule de l'écart-type du pourcentage  GC et de la longueur des séquences ***********")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
