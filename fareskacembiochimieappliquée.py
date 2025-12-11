@@ -88,7 +88,7 @@ print(df[ccolonnes_cibles].mean())
 #9)Ajouter une nouvelle colonne "Utilité"
 print("********** Ajout de nouvelle colonne Utilité **********")
 # Ajouter une nouvelle colonne "Utilité"
-df["Utilité"]= df["Longueur"].apply(lambda x: "Utile" if x > 11 else "Inutile")
+df["Utilité"]= df["nombre de G"].apply(lambda x: "Utile" if x > 2 else "Inutile")
 print(df, "\n\n\n")
 
 
