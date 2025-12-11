@@ -82,7 +82,7 @@ print("********** Calcule de la Moyenne  du pourcentage  GC et de la longueur de
 # Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
 colonnes_cibles= ["pourcentage GC", "Longueur"]
 print(f"Moyenne des colonnes {colonnes_cibles} :")
-print(df[ccolonnes_cibles].mean())
+print(df[colonnes_cibles].mean())
 
 
 #9)Ajouter une nouvelle colonne "Utilité"
