@@ -14,14 +14,14 @@ data = {
 }
 # Création d'un Dataframe (tableau pandas)
 df = pd.DataFrame(data)
-print("********** Création et affichage **********")
+print("*********** Création et affichage ***********")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :")
 print(df, "\n\n\n")
 
 # Opération sur les tableaux:
-print("********** Opérations **********")
+print("*********** Opérations ***********")
 #1) Sélectionner uniquement la colonne "longueur"
 longueur = df["Longueur"]
 print(longueur, "\n\n\n")
@@ -40,14 +40,14 @@ print(longueur, "\n\n\n")
 
 
 #3)Filtrer les séquences avec  longueur  supérieur à 10
-print("********** Filtrage avec longueur  **********")
+print("*********** Filtrage avec longueur  ***********")
 # Filtrer les séquences avec  longueur  supérieur à 10
 filtered_df = df[df["Longueur"] > 10] 
 print(filtered_df, "\n\n\n") 
 
 
 #4)Calculer le pourcentage moyen de GC
-print("********** Calcul de le pourcentage **********")
+print("*********** Calcul de le pourcentage ***********")
 # Calculer la moyenne du pourcentage de GC
 average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
@@ -60,26 +60,26 @@ print(df, "\n\n\n")
 
 
 #6)Ajouter une nouvelle colonne de nombre de G
-print("********** Ajoute une nouvelle colonne de nombre de G **********")
+print("*********** Ajoute une nouvelle colonne de nombre de G ***********")
 # Ajouter une nouvelle colonne "nombre de G"
 df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
 
 
 #7) Calculer l'écart-type de pourcentage GC et de la longueur des séquences
-print("********** Calcule de l'écart-type du pourcentage  GC et de la longueur des séquences **********")
+print("*********** Calcule de l'écart-type du pourcentage  GC et de la longueur des séquences ***********")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
 # Calculer l'écart-type de pourcentage GC et de la longueur des séquences  
 print(df[["pourcentage GC","Longueur"]].std())
 
 #7.1)Arrondir les valeur de l'écart-type 
-print("********** Arrondir les valeurs de l'écart-type **********") 
+print("*********** Arrondir les valeurs de l'écart-type ***********") 
 # Arrondir les valeurs de l'écart-type 
 print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".format))
 
 
 #8) Calculer la Moyenne de pourcentage GC et de la longueur des séquences 
-print("********** Calcule de la Moyenne  du pourcentage  GC et de la longueur des séquences **********")
+print("*********** Calcule de la Moyenne  du pourcentage  GC et de la longueur des séquences ***********")
 # Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
 colonnes_cibles= ["pourcentage GC", "Longueur"]
 print(f"Moyenne des colonnes {colonnes_cibles} :")
@@ -87,14 +87,14 @@ print(df[colonnes_cibles].mean())
 
 
 #9)Ajouter une nouvelle colonne "Utilité"
-print("********** Ajout de nouvelle colonne Utilité **********")
+print("*********** Ajout de nouvelle colonne Utilité ***********")
 # Ajouter une nouvelle colonne "Utilité"
 df["Utilité"]= df["nombre de G"].apply(lambda x: "Utile" if x > 2 else "Inutile")
 print(df, "\n\n\n")
 
 
 #10)Filtrage des séquences Utile 
-print("********** Filtrage des séquences Utile **********")
+print("*********** Filtrage des séquences Utile ***********")
 # Filtrer les séquences  Utile 
 filtred_df = df[df["Utilité"] == "Utile" ]
 print(filtred_df, "\n\n\n")
