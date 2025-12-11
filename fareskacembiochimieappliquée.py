@@ -10,7 +10,7 @@ data = {
     "séquence":["ATGCGTACGTA", "GCTAGCTAGGCC", "ATGCGCGTAAGT", "TACGATCGTA", "ATGAAAGGCTT", "CGTACGTAGC", "TTAACCGGAT"],
      "Longueur":[11, 12, 12, 10, 11, 10, 10],
      "pourcentage GC":[50, 66.67, 58.33, 40, 45.45, 60, 50],
-     "Déscription":["Gène Cible 01", "Gène Cible 02", "Gène Cible 03", "Gène Cible 04", "Gène Candidat", "Gène Page", "Séquence consensus"]
+     "Description":["Gène Cible 01", "Gène Cible 02", "Gène Cible 03", "Gène Cible 04", "Gène Candidat", "Gène Page", "Séquence consensus"]
 }
 # Création d'un Dataframe (tableau pandas)
 df = pd.DataFrame(data)
@@ -101,4 +101,4 @@ print(filtred_df, "\n\n\n")
 
 #11) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
-#df.to_csv("tableau_sequences.csv",index=False)
+#df.to_csv("tableau_sequences.csv", index=False)
