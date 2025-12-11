@@ -75,6 +75,11 @@ print("*********** Ajoute une nouvelle colonne **********")
 df["nombre de T"] = df["séquence"].apply(lambda séq: séq.count("T"))
 print(df, "\n\n\n")
 
+#Calculer le pourcentage moyen de T
+average_t = df["Longueur"].mean()
+print(f"pourcentage moyen de T : {average_c:.2f}%","\n\n\n")
+
+
 #Ajouter une nouvelle colonne nombre de C
 print("*********** Ajoute une nouvelle colonne ***********")
 #Ajouter une nouvelle colonne "nombre de C"
