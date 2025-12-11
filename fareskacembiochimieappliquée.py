@@ -77,7 +77,7 @@ print(df, "\n\n\n")
 
 #Calculer le pourcentage moyen de T
 average_t = df["Longueur"].mean()
-print(f"pourcentage moyen de T : {average_c:.2f}%","\n\n\n")
+print(f"pourcentage moyen de T : {average_t:.2f}%","\n\n\n")
 
 
 #Ajouter une nouvelle colonne nombre de C
