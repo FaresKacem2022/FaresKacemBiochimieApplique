@@ -33,8 +33,9 @@ print(longueur, "\n\n\n")
 #séquences = ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"]
 #longueur =[11, 12, 12, 10, 11, 10, 10]
 #gc_content = [50, 66.67, 58.33, 40, 45.45, 60, 50]
+#Description:["Gène Cible 01", "Gène Cible 02", "Gène Cible 03", "Gène Cible 04", "Gène Candidat", "Gène Page", "Séquence consensus"]
 #Création d'un DataFrame
-#data = {"Séquence": séquences,"Longueur": Longueur, "Pourcentage GC": gc_content}
+#data = {"Séquence": séquences,"Longueur": Longueur, "Pourcentage GC": gc_content, "Description": Description}
 #df = pd.DataFrame(données)
 
 
