@@ -92,6 +92,13 @@ df["Utilité"]= df["nombre de G"].apply(lambda x: "Utile" if x > 2 else "Inutile
 print(df, "\n\n\n")
 
 
-#10) Sauvegarde et chargement des données avec panda
+#10)Filtrage des séquences Utile 
+print("********** Filtrage des séquences Utile **********")
+# Filtrer les séquences  Utile 
+filtred_df = df[df["Utilité"] == "Utile" ]
+print(filtred_df, "\n\n\n")
+
+
+#11) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
 #df.to_csv("tableau_sequences.csv",index=False)
