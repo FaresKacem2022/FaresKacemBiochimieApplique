@@ -52,7 +52,7 @@ average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n\n")
 
 
-#5)Ajouter d'une nouvelle colonne "Catégorie GC"
+#5)Ajouter une nouvelle colonne "Catégorie GC"
 # Ajouter une nouvelle colonne "Catégorie GC"
 df["Catégorie GC"]= df["pourcentage GC"].apply(lambda x: "Riche" if x > 55 else "Moyenne" if 45 < x < 55 else "Faible")
 print(df, "\n\n\n")
@@ -82,9 +82,16 @@ print("********** Calcule de la Moyenne  du pourcentage  GC et de la longueur de
 # Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
 colonnes_cibles= ["pourcentage GC", "Longueur"]
 print(f"Moyenne des colonnes {colonnes_cibles} :")
-print(df[colonnes_cibles].mean())
+print(df[ccolonnes_cibles].mean())
 
 
-#9) Sauvegarde et chargement des données avec panda
+#9)Ajouter une nouvelle colonne "Utilité"
+print("********** Ajout de nouvelle colonne "Utilité" **********")
+# Ajouter une nouvelle colonne "Utilité"
+df["Utilité"]= df["Longueur"].apply(lambda x: "Utile" if x > 11 else "Inutile")
+print(df, "\n\n\n")
+
+
+#10) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
 #df.to_csv("tableau_sequences.csv",index=False)
