@@ -14,7 +14,7 @@ data = {
 }
 # Création d'un Dataframe (tableau pandas)
 df = pd.DataFrame(data)
-print("************ Création et affichage ************")
+print("************* Création et affichage *************")
 
 # Affichage du tableau 
 print("Tableau des séquences ADN :")
@@ -94,7 +94,7 @@ print(df, "\n\n\n")
 
 
 #10)Filtrage des séquences Utile 
-print("*********** Filtrage des séquences Utile ***********")
+print("************ Filtrage des séquences Utile ************")
 # Filtrer les séquences  Utile 
 filtred_df = df[df["Utilité"] == "Utile" ]
 print(filtred_df, "\n\n\n")
