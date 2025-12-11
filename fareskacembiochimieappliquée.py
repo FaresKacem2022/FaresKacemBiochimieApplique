@@ -70,12 +70,12 @@ print(df, "\n\n\n")
 print("*********** Calcule de l'écart-type du pourcentage  GC et de la longueur des séquences ***********")
 print("Écart-type pour 'pourcentage GC' et 'Longueur' :")
 # Calculer l'écart-type de pourcentage GC et de la longueur des séquences  
-print(df[["pourcentage GC","Longueur"]].std())
+print(df[["pourcentage GC","Longueur"]].std(), "\n\n\n")
 
 #7.1)Arrondir les valeur de l'écart-type 
 print("*********** Arrondir les valeurs de l'écart-type ***********") 
 # Arrondir les valeurs de l'écart-type 
-print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".format))
+print(df[["pourcentage GC", "Longueur"]].std().to_string(float_format="{:.2f}".format), "\n\n\n")
 
 
 #8) Calculer la Moyenne de pourcentage GC et de la longueur des séquences 
@@ -83,7 +83,7 @@ print("*********** Calcule de la Moyenne  du pourcentage  GC et de la longueur d
 # Calculer la Moyenne du pourcentage GC et de la longueur des séquences 
 colonnes_cibles= ["pourcentage GC", "Longueur"]
 print(f"Moyenne des colonnes {colonnes_cibles} :")
-print(df[colonnes_cibles].mean())
+print(df[colonnes_cibles].mean(), "\n\n\n")
 
 
 #9)Ajouter une nouvelle colonne "Utilité"
