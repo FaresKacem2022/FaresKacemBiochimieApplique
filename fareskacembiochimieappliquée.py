@@ -79,7 +79,6 @@ print(df, "\n\n\n")
 average_t = df["Longueur"].mean()
 print(f"pourcentage moyen de T : {average_t:.2f}%","\n\n\n")
 
-
 #Ajouter une nouvelle colonne nombre de C
 print("*********** Ajoute une nouvelle colonne ***********")
 #Ajouter une nouvelle colonne "nombre de C"
@@ -124,6 +123,13 @@ filtred_df = df[df["Utilité"] == "Utile" ]
 print(filtred_df, "\n\n\n")
 
 
-#11) Sauvegarde et chargement des données avec panda
+#11)Ajouter une nouvelle colonne de température de fusion "Tm"
+print("********** Ajoute une nouvelle colonne 'Tm' **********")
+#Ajouter une nouvelle colonne "Température de fusion'Tm'"
+df["Tm"]= df["séquence"].apply(lambda séq: 2*(séq.count("A") + séq.count("T")) + 4*(séq.count("G") + séq.count("C")))
+print(df, "\n\n\n")
+
+
+#12) Sauvegarde et chargement des données avec panda
 #Sauvegarder le DataFrame dans un fichier CSV
 #df.to_csv("tableau_sequences.csv", index=False)
