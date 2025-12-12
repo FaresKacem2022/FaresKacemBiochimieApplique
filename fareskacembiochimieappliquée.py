@@ -126,15 +126,15 @@ df["Utilité"]= df["nombre de G"].apply(lambda x: "Utile" if x > 2 else "Inutile
 print(df, "\n\n\n")
 
 
-#10) ** Filtrage des séquences Utile **
+#10) ** Filtrage des séquences "Utile" **
 print("************ Filtrage des séquences Utile ************")
-# ===== Filtrer les séquences  Utile =====
+# ===== Filtrer les séquences "Utile" =====
 filtred_df = df[df["Utilité"] == "Utile" ]
 print(filtred_df, "\n\n\n")
 
 
 #11) ** Ajouter une nouvelle colonne de température de fusion "Tm" **
-print("********** Ajoute une nouvelle colonne 'Tm' **********")
+print("********** Ajoute une nouvelle colonne Tm **********")
 # ===== Ajouter une nouvelle colonne "Température de fusion'Tm'" =====
 df["Tm"]= df["séquence"].apply(lambda séq: 2*(séq.count("A") + séq.count("T")) + 4*(séq.count("G") + séq.count("C")))
 print(df, "\n\n\n")
