@@ -65,11 +65,11 @@ print("************ Ajoute une nouvelle colonne ************")
 df["nombre de G"] = df["séquence"].apply(lambda séq: séq.count("G"))
 print(df, "\n\n\n")
 
-# =====Calculer le pourcentage moyen de G =====
+# ===== Calculer le pourcentage "moyen de G" =====
 average_g = df["Longueur"].mean()
 print(f"pourcentage moyen de G : {average_g:.2f}%", "\n\n\n")
 
-# ===== Ajouter une nouvelle colonne nombre de T =====
+# ===== Ajouter une nouvelle colonne "nombre de T" =====
 print("*********** Ajoute une nouvelle colonne **********")
 # ===== Ajouter une nouvelle colonne "nombre de T" =====
 df["nombre de T"] = df["séquence"].apply(lambda séq: séq.count("T"))
